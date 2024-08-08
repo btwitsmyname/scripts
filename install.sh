@@ -9,3 +9,8 @@ cd ns-allinone-3.42/
 git clone https://gitlab.com/nsnam/ns-3-dev.git
 echo "colned"
 cd ns-3-dev
+./ns3 configure --enable-examples --enable-tests
+./ns3 build
+./test.py
+./ns3 run first
+./sn3 run 'first -- PrintHelp'
